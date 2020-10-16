@@ -1,0 +1,56 @@
+
+@article{2012-Suter-PP-30-69,
+   title = "Musrfit: A Free Platform-Independent Framework for {μSR} Data Analysis",
+   journal = "Phys. Proc.",
+   volume = "30",
+   pages = "69--73",
+   year = "2012",
+   %note = "12th International Conference on Muon Spin Rotation, Relaxation and Resonance (μSR2011)",
+   issn = "1875-3892",
+   doi = "10.1016/j.phpro.2012.04.042",
+   url = "http://www.sciencedirect.com/science/article/pii/S187538921201228X",
+   author = "A. Suter and B. M. Wojek",
+   keywords = "μSR data analysis",
+   abstract = "Afree data-analysis framework forμSR has been developed. musrfit is fully written in C++, is running under GNU/Linux, MacOSX, as well as Microsoft Windows, andis distributed under the termsof the GNU GPL.Itis based on the CERN ROOT framework and is utilizing the Minuit2 optimization routines for fitting. It consists of a set of programmes allowing the user to analyze and visualize the data.The fitting process is controlled by an ASCII-input file with an extended syntax. A dedicated text editoris helping the user to createand handle these files in an efficient way, execute the fitting, show the data, get online help, and so on. Aversatile tool for the generation of new input files and the extraction of fit parameters is provided as well. musrfit facilitates a plugin mechanism allowing to invoke user-defined functions. Hence, the functionality of the framework can be extended with a minimal amount of overhead for the user. Currently, musrfit can read the followingfacility raw-data files: PSI-BIN, MDU (PSI), ROOT (LEM/PSI), WKM (outdated ASCII format), MUD (TRIUMF), NeXus (ISIS)."
+}
+
+@article{2016-Adelmann-CPC-201683,
+   title = "The Dynamic Kernel Scheduler --- Part 1",
+   journal = "Comput. Phys. Commun.",
+   volume = "207",
+   pages = "83--90",
+   year = "2016",
+   issn = "0010-4655",
+   doi = "10.1016/j.cpc.2016.05.013",
+   url = "http://www.sciencedirect.com/science/article/pii/S0010465516301370",
+   author = "Andreas Adelmann and Uldis Locans and Andreas Suter",
+   keywords = "GPU, CUDA, Intel MIC, FFT, Monte Carlo, OPAL, SR",
+   abstract = "Emerging processor architectures such as GPUs and Intel MICs provide a huge performance potential for high performance computing. However developing software that uses these hardware accelerators introduces additional challenges for the developer. These challenges may include exposing increased parallelism, handling different hardware designs, and using multiple development frameworks in order to utilise devices from different vendors. The Dynamic Kernel Scheduler (DKS) is being developed in order to provide a software layer between the host application and different hardware accelerators. DKS handles the communication between the host and the device, schedules task execution, and provides a library of built-in algorithms. Algorithms available in the DKS library will be written in CUDA, OpenCL, and OpenMP. Depending on the available hardware, the DKS can select the appropriate implementation of the algorithm. The first DKS version was created using CUDA for the Nvidia GPUs and OpenMP for Intel MIC. DKS was further integrated into OPAL (Object-oriented Parallel Accelerator Library) in order to speed up a parallel FFT based Poisson solver and Monte Carlo simulations for particle–matter interaction used for proton therapy degrader modelling. DKS was also used together with Minuit2 for parameter fitting, where χ2 and max-log-likelihood functions were offloaded to the hardware accelerator. The concepts of the DKS, first results, and plans for the future will be shown in this paper."
+}
+
+@article{2017-Locans-CPC-215-71,
+   title = "Real-time computation of parameter fitting and image reconstruction using graphical processing units",
+   journal = "Comput. Phys. Commun.",
+   volume = "215",
+   pages = "71--80",
+   year = "2017",
+   issn = "0010-4655",
+   doi = "10.1016/j.cpc.2017.02.007",
+   url = "http://www.sciencedirect.com/science/article/pii/S0010465517300498",
+   author = "Uldis Locans and Andreas Adelmann and Andreas Suter and Jannis Fischer and Werner Lustermann and Günther Dissertori and Qiulin Wang",
+   keywords = "GPU, CUDA, Musrfit, PET, Image reconstruction",
+   abstract = "In recent years graphical processing units (GPUs) have become a powerful tool in scientific computing. Their potential to speed up highly parallel applications brings the power of high performance computing to a wider range of users. However, programming these devices and integrating their use in existing applications is still a challenging task. In this paper we examined the potential of GPUs for two different applications. The first application, created at Paul Scherrer Institut (PSI), is used for parameter fitting during data analysis of μSR (muon spin rotation, relaxation and resonance) experiments. The second application, developed at ETH, is used for PET (Positron Emission Tomography) image reconstruction and analysis. Applications currently in use were examined to identify parts of the algorithms in need of optimization. Efficient GPU kernels were created in order to allow applications to use a GPU, to speed up the previously identified parts. Benchmarking tests were performed in order to measure the achieved speedup. During this work, we focused on single GPU systems to show that real time data analysis of these problems can be achieved without the need for large computing clusters. The results show that the currently used application for parameter fitting, which uses OpenMP to parallelize calculations over multiple CPU cores, can be accelerated around 40 times through the use of a GPU. The speedup may vary depending on the size and complexity of the problem. For PET image analysis, the obtained speedups of the GPU version were more than ×40 larger compared to a single core CPU implementation. The achieved results show that it is possible to improve the execution time by orders of magnitude."
+}
+
+@article{2018-Locans-JPSCP-21-01151,
+   author = {Uldis Locans and Andreas Suter},
+   title = {Musrfit --- Real Time Parameter Fitting Using {GPU}s},
+   %note = {Proceedings of the 14th International Conference on Muon Spin Rotation, Relaxation and Resonance (μSR2017)},
+   journal = {JPS Conf. Proc.},
+   volume = {21},
+   pages = {011051},
+   year = {2018},
+   doi = {10.7566/JPSCP.21.011051},
+   URL = {https://journals.jps.jp/doi/abs/10.7566/JPSCP.21.011051},
+   %eprint = {https://journals.jps.jp/doi/pdf/10.7566/JPSCP.21.011051}
+}

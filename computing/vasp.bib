@@ -1,0 +1,59 @@
+
+@article{1996-Kresse-CMS-6-15,
+   title = "Efficiency of ab-initio total energy calculations for metals and semiconductors using a plane-wave basis set",
+   journal = "Comput. Mater. Sci.",
+   volume = "6",
+   number = "1",
+   pages = "15--50",
+   year = "1996",
+   issn = "0927-0256",
+   doi = "10.1016/0927-0256(96)00008-0",
+   url = "http://www.sciencedirect.com/science/article/pii/0927025696000080",
+   author = "G. Kresse and J. Furthmüller",
+   abstract = "We present a detailed description and comparison of algorithms for performing ab-initio quantum-mechanical calculations using pseudopotentials and a plane-wave basis set. We will discuss: (a) partial occupancies within the framework of the linear tetrahedron method and the finite temperature density-functional theory, (b) iterative methods for the diagonalization of the Kohn-Sham Hamiltonian and a discussion of an efficient iterative method based on the ideas of Pulay's residual minimization, which is close to an order Natoms2 scaling even for relatively large systems, (c) efficient Broyden-like and Pulay-like mixing methods for the charge density including a new special ‘preconditioning’ optimized for a plane-wave basis set, (d) conjugate gradient methods for minimizing the electronic free energy with respect to all degrees of freedom simultaneously. We have implemented these algorithms within a powerful package called VAMP (Vienna ab-initio molecular-dynamics package). The program and the techniques have been used successfully for a large number of different systems (liquid and amorphous semiconductors, liquid simple and transition metals, metallic and semi-conducting surfaces, phonons in simple metals, transition metals and semiconductors) and turned out to be very reliable."
+}
+
+@article{1996-Kresse-PRB-54-11169,
+   title = {Efficient iterative schemes for \emph{ab initio} total-energy calculations using a plane-wave basis set},
+   author = {Kresse, G. and Furthmüller, J.},
+   journal = {Phys. Rev. B},
+   volume = {54},
+   issue = {16},
+   pages = {11169--11186},
+   numpages = {0},
+   year = {1996},
+   month = {Oct},
+   publisher = {American Physical Society},
+   doi = {10.1103/PhysRevB.54.11169},
+   url = {https://link.aps.org/doi/10.1103/PhysRevB.54.11169}
+}
+
+@article{2008-Hafner-JCC-29-2044,
+   author = {Hafner, Jürgen},
+   title = {Ab-initio simulations of materials using {VASP}: Density-functional theory and beyond},
+   journal = {J. Comput. Chem.},
+   volume = {29},
+   number = {13},
+   pages = {2044--2078},
+   keywords = {density-functional theory, plane-wave basis, pseudopotentials, projector-augmented-waves, hybrid functionals, many-body perturbation theory, solid state physics, solid state chemistry, materials science, surface science, catalysis},
+   doi = {10.1002/jcc.21057},
+   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21057},
+   %eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/jcc.21057},
+   abstract = {Abstract During the past decade, computer simulations based on a quantum-mechanical description of the interactions between electrons and between electrons and atomic nuclei have developed an increasingly important impact on solid-state physics and chemistry and on materials science—promoting not only a deeper understanding, but also the possibility to contribute significantly to materials design for future technologies. This development is based on two important columns: (i) The improved description of electronic many-body effects within density-functional theory (DFT) and the upcoming post-DFT methods. (ii) The implementation of the new functionals and many-body techniques within highly efficient, stable, and versatile computer codes, which allow to exploit the potential of modern computer architectures. In this review, I discuss the implementation of various DFT functionals [local-density approximation (LDA), generalized gradient approximation (GGA), meta-GGA, hybrid functional mixing DFT, and exact (Hartree-Fock) exchange] and post-DFT approaches [DFT + U for strong electronic correlations in narrow bands, many-body perturbation theory (GW) for quasiparticle spectra, dynamical correlation effects via the adiabatic-connection fluctuation-dissipation theorem (AC-FDT)] in the Vienna ab initio simulation package VASP. VASP is a plane-wave all-electron code using the projector-augmented wave method to describe the electron-core interaction. The code uses fast iterative techniques for the diagonalization of the DFT Hamiltonian and allows to perform total-energy calculations and structural optimizations for systems with thousands of atoms and ab initio molecular dynamics simulations for ensembles with a few hundred atoms extending over several tens of ps. Applications in many different areas (structure and phase stability, mechanical and dynamical properties, liquids, glasses and quasicrystals, magnetism and magnetic nanostructures, semiconductors and insulators, surfaces, interfaces and thin films, chemical reactions, and catalysis) are reviewed. © 2008 Wiley Periodicals, Inc. J Comput Chem, 2008},
+   year = {2008}
+}
+
+@article{2019-Wende-IJQC-119-e25851,
+   author = {Wende, Florian and Marsman, Martijn and Kim, Jeongnim and Vasilev, Fedor and Zhao, Zhengji and Steinke, Thomas},
+   title = {{OpenMP} in {VASP}: Threading and {SIMD}},
+   journal = {Int. J. Quantum Chem.},
+   volume = {119},
+   number = {12},
+   pages = {e25851},
+   doi = {10.1002/qua.25851},
+   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.25851},
+   %eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/qua.25851},
+   abstract = {Abstract The Vienna Ab initio Simulation Package (VASP) is a widely used electronic structure code that originally exploits process-level parallelism through the Message Passing Interface (MPI) for work distribution within and across nodes. Architectural changes of modern parallel processors urge programmers to address thread- and data-level parallelism as well to benefit most from the available compute resources within a node. We describe for VASP how to approach for an MPI + OpenMP parallelization including data-level parallelism through OpenMP SIMD constructs together with a generic high-level vector coding scheme. We can demonstrate an improved scalability of VASP and more than 20\% gain over the MPI-only version as well as a 2× increased performance of collective operations using the multiple-endpoint MPI feature. The high-level vector coding scheme applied to VASP's general gradient approximation routine gives up 9× performance gain on AVX512 platforms with the Intel compiler.},
+   year = {2019}
+}
+
