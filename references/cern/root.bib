@@ -67,6 +67,20 @@
    abstract = {Cling is an interactive C++ interpreter, built on top of Clang and LLVM compiler infrastructure. Like its predecessor Cint, Cling realizes the read-print-evaluate-loop concept, in order to leverage rapid application development. Implemented as a small extension to LLVM and Clang, the interpreter reuses their strengths such as the praised concise and expressive compiler diagnostics. We show how to match the interpreter concept to the compiler library and generalize common set of requirements for building up an interactive interpreter. We reason the design and implementation decisions as solution to the challenge of implementing interpreter behaviour as an extension of the compiler library. We present the new features, e.g. how C++11 will come to Cling and how Cint-specific extensions are being adopted. We clarify the state of integration in the ROOT framework and the induced change set. We explain how ROOT dictionaries are simplified due to the new interpreter.}
 }
 
+@article{2015-Vassilev-JPCS-608-012055,
+   doi = {10.1088/1742-6596/608/1/012055},
+   url = {https://doi.org/10.1088/1742-6596/608/1/012055},
+   year = {2015},
+   month = {may},
+   publisher = {IOP Publishing},
+   volume = {608},
+   pages = {012055},
+   author = {V. Vassilev and M. Vassilev and A. Penev and L. Moneta and V. Ilieva},
+   title = {{Clad} --- Automatic Differentiation Using {Clang} and {LLVM}},
+   journal = {J. Phys.: Conf. Ser.},
+   abstract = {Differentiation is ubiquitous in high energy physics, for instance in minimization algorithms and statistical analysis, in detector alignment and calibration, and in theory. Automatic differentiation (AD) avoids well-known limitations in round-offs and speed, which symbolic and numerical differentiation suffer from, by transforming the source code of functions. We will present how AD can be used to compute the gradient of multi-variate functions and functor objects. We will explain approaches to implement an AD tool. We will show how LLVM, Clang and Cling (ROOT's C++11 interpreter) simplifies creation of such a tool. We describe how the tool could be integrated within any framework. We will demonstrate a simple proof-of-concept prototype, called Clad, which is able to generate n-th order derivatives of C++ functions and other language constructs. We also demonstrate how Clad can offload laborious computations from the CPU using OpenCL.}
+}
+
 @article{2017-Vassilev-JPCS-898-072023,
    doi = {10.1088/1742-6596/898/7/072023},
    url = {https://doi.org/10.1088/1742-6596/898/7/072023},
@@ -79,5 +93,17 @@
    title = {Optimizing {ROOT}'s Performance Using {C++} Modules},
    journal = {J. Phys.: Conf. Ser.},
    abstract = {ROOT comes with a C++ compliant interpreter cling. Cling needs to understand the content of the libraries in order to interact with them. Exposing the full shared library descriptors to the interpreter at runtime translates into increased memory footprint. ROOT’s exploratory programming concepts allow implicit and explicit runtime shared library loading. It requires the interpreter to load the library descriptor. Re-parsing of descriptors’ content has a noticeable effect on the runtime performance. Present state-of-art lazy parsing technique brings the runtime performance to reasonable levels but proves to be fragile and can introduce correctness issues. An elegant solution is to load information from the descriptor lazily and in a non-recursive way. The LLVM community advances its C++ Modules technology providing an io-efficient, on-disk representation capable to reduce build times and peak memory usage. The feature is standardized as a C++ technical specification. C++ Modules are a flexible concept, which can be employed to match CMS and other experiments’ requirement for ROOT: to optimize both runtime memory usage and performance. Cling technically “inherits” the feature, however tweaking it to ROOT scale and beyond is a complex endeavor. The paper discusses the status of the C++ Modules in the context of ROOT, supported by few preliminary performance results. It shows a step-by-step migration plan and describes potential challenges which could appear.}
+}
+
+@article{arXiv:2004.04435,
+   title = "Automatic Differentiation in {ROOT}",
+   author = "Vassil Vassilev and Aleksandr Efremov and Oksana Shadura",
+   abstract = "In mathematics and computer algebra, automatic differentiation (AD) is a set of techniques to evaluate the derivative of a function specified by a computer program. AD exploits the fact that every computer program, no matter how complicated, executes a sequence of elementary arithmetic operations (addition, subtraction, multiplication, division, etc.), elementary functions (exp, log, sin, cos, etc.) and control flow statements. AD takes source code of a function as input and produces source code of the derived function. By applying the chain rule repeatedly to these operations, derivatives of arbitrary order can be computed automatically, accurately to working precision, and using at most a small constant factor more arithmetic operations than the original program. This paper presents AD techniques available in ROOT, supported by Cling, to produce derivatives of arbitrary C/C++ functions through implementing source code transformation and employing the chain rule of differential calculus in both forward mode and reverse mode. We explain its current integration for gradient computation in TFormula. We demonstrate the correctness and performance improvements in ROOT's fitting algorithms.",
+   %year = "2020",
+   %month = "04",
+   %day = "09",
+   eprinttype = "arxiv",
+   eprint = "2004.04435",
+   eprintclass = "cs.MS"
 }
 
