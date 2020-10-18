@@ -95,6 +95,43 @@
    abstract = {ROOT comes with a C++ compliant interpreter cling. Cling needs to understand the content of the libraries in order to interact with them. Exposing the full shared library descriptors to the interpreter at runtime translates into increased memory footprint. ROOT’s exploratory programming concepts allow implicit and explicit runtime shared library loading. It requires the interpreter to load the library descriptor. Re-parsing of descriptors’ content has a noticeable effect on the runtime performance. Present state-of-art lazy parsing technique brings the runtime performance to reasonable levels but proves to be fragile and can introduce correctness issues. An elegant solution is to load information from the descriptor lazily and in a non-recursive way. The LLVM community advances its C++ Modules technology providing an io-efficient, on-disk representation capable to reduce build times and peak memory usage. The feature is standardized as a C++ technical specification. C++ Modules are a flexible concept, which can be employed to match CMS and other experiments’ requirement for ROOT: to optimize both runtime memory usage and performance. Cling technically “inherits” the feature, however tweaking it to ROOT scale and beyond is a complex endeavor. The paper discusses the status of the C++ Modules in the context of ROOT, supported by few preliminary performance results. It shows a step-by-step migration plan and describes potential challenges which could appear.}
 }
 
+@phdthesis{2018-VallsPla-PhD,
+   title = "Multi-level Parallelization in {ROOT}: New Patterns, Libraries and Utilities",
+   author = "Valls Pla, Xavier",
+   year = "2018",
+   month = "10",
+   day = "19",
+   doi = "10.6035/14101.2018.178448",
+   school "Universitat Jaume I",
+   address = "Castelló de la Plana, Spain",
+   abstract = "The Large Hadron Collider (LHC) is generating Physics data at an unprecedented rate that is expected to continue increasing in the future. This situation results in increasing demands in computation and processing power for analyzing the LHC data. At the same time, modern architectures have switched from a sequential processing paradigm to a parallel one. In order to take full advantage of new computer architectures, to improve performance with increasing amounts of data to analyze, and to reduce development time and complexity, ROOT, the official LHC analysis framework, is undertaking a modernization effort to cope with the computational challenges posed by the ambitious physics program of the LHC. We contribute to this modernization effort by implementing patterns, introducing libraries and developing utilities for the parallelization of ROOT at multiple levels, improving the programming model and providing backward compatibility."
+}
+
+@article{2018-VallsPla-JPCS-1085-032024,
+   doi = {10.1088/1742-6596/1085/3/032024},
+   url = {https://doi.org/10.1088/1742-6596/1085/3/032024},
+   year = {2018},
+   month = {sep},
+   publisher = {IOP Publishing},
+   volume = {1085},
+   pages = {032024},
+   author = {X. {Valls Pla} and L. Moneta},
+   title = {Parallelization and vectorization of {ROOT} fitting classes},
+   journal = {J. Phys.: Conf. Ser.},
+   abstract = {We introduce parallelization and vectorization in ROOT mathematical and statistical libraries in order to take full advantage of new computer architectures and to maximize the CPU usage with an increasing amount of data to analyze. As part of this effort, we define in ROOT new generic classes supporting a task-based parallelization mode, which can be used for a wide range of computational tasks in the field of High Energy Physics. We also include support for different SIMD libraries, by including in ROOT a new generic library for vectorization. These different parallelization tools are applied together when parallelizing the minimization process for solving fitting problems. We report on the improvements obtained by adding the support for SIMD vectorization and multithreaded parallelization when fitting ROOT histograms and datasets represented by ROOT trees.}
+}
+
+@article{2019-Valls-EPJWC-214-05043,
+   author = "Valls, Xavier and Moneta, Lorenzo and Amadio, Guilherme and Tsang, Arthur",
+   title = "New developments in the {ROOT} fitting classes",
+   DOI= "10.1051/epjconf/201921405043",
+   url= "https://doi.org/10.1051/epjconf/201921405043",
+   journal = "EPJ Web Conf.",
+   year = "2019",
+   volume = "214",
+   pages = "05043",
+}
+
 @article{arXiv:2004.04435,
    title = "Automatic Differentiation in {ROOT}",
    author = "Vassil Vassilev and Aleksandr Efremov and Oksana Shadura",
