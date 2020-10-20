@@ -147,8 +147,8 @@ with open('all_refs.tex', 'w') as fh :
    last_dir = ''
    
    for b in bib :
-      # get the current directory
-      current_dir = b.split('/')[0] + '/'
+      # get the current (sub)directory (note: [0] = references/)
+      current_dir = b.split('/')[1] + '/'
       
       if current_dir != last_dir:
          fh.write(r'\chapter*{' + current_dir + '}' + '\n')
@@ -158,7 +158,7 @@ with open('all_refs.tex', 'w') as fh :
       
       fh.write(r'\begin{refsection}[' + b + ']' + '\n')
       fh.write('\t' + r'\nocite{*}' + '\n')
-      fh.write('\t' + r'\printbibliography[title = {' + b.replace(current_dir, '', 1) + '}, heading = subbibintoc]' + '\n')
+      fh.write('\t' + r'\printbibliography[title = {' + b.replace('references/', '', 1).replace(current_dir, '', 1) + '}, heading = subbibintoc]' + '\n')
       fh.write(r'\end{refsection}' + '\n')
       fh.write('\n')
    fh.write('\n')
