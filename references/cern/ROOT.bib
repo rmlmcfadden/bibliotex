@@ -136,6 +136,20 @@
    abstract = {We introduce parallelization and vectorization in ROOT mathematical and statistical libraries in order to take full advantage of new computer architectures and to maximize the CPU usage with an increasing amount of data to analyze. As part of this effort, we define in ROOT new generic classes supporting a task-based parallelization mode, which can be used for a wide range of computational tasks in the field of High Energy Physics. We also include support for different SIMD libraries, by including in ROOT a new generic library for vectorization. These different parallelization tools are applied together when parallelizing the minimization process for solving fitting problems. We report on the improvements obtained by adding the support for SIMD vectorization and multithreaded parallelization when fitting ROOT histograms and datasets represented by ROOT trees.}
 }
 
+@article{2018-Amadio-JPCP-1085-032034,
+   doi = {10.1088/1742-6596/1085/3/032034},
+   url = {https://doi.org/10.1088/1742-6596/1085/3/032034},
+   year = {2018},
+   month = {sep},
+   publisher = {IOP Publishing},
+   volume = {1085},
+   pages = {032034},
+   author = {G. Amadio and P. Canal and D. Piparo and S. Wenzel},
+   title = {Speeding up software with {VecCore}},
+   journal = {J. Phys.: Conf. Ser.},
+   abstract = {Portable and efficient vectorization is a significant challenge in large software projects such as GeantV, ROOT, and experiments’ frameworks. Nevertheless, fully exploiting SIMD parallelism will be a required step in order to bridge the widening gap between the needs and availability of computing resouces for data analysis and processing in particle physics. Although there are SIMD libraries that wrap compiler intrinsics into a convenient interface, they do not always support all available architectures, or they only perform well in some of them. The VecCore library was created to address some of these performance and portability issues by providing a unified abstraction layer on top of existing libraries, such as Vc or UME::SIMD. In this article, we discuss VecCore’s programming model for SIMD code and some use cases in HEP software packages such as VecGeom and GeantV.}
+}
+
 @article{2019-Valls-EPJWC-214-05043,
    author = "Valls, Xavier and Moneta, Lorenzo and Amadio, Guilherme and Tsang, Arthur",
    title = "New developments in the {ROOT} fitting classes",
