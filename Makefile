@@ -6,5 +6,11 @@
 all_refs:
 	latexmk -pdflua -e '$$max_repeat=10' all_refs
 
+all_refs2:
+	lualatex all_refs.tex
+	biber all_refs
+	lualatex all_refs.tex
+	lualatex all_refs.tex
+
 clean:
 	latexmk -c
