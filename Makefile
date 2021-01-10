@@ -3,14 +3,14 @@
 # Note: increasing max_repeat from its default value (5) is necessary
 # due to the large (and ever-growing) size of all_refs.tex
 
-all_refs:
-	latexmk -lualatex -e '$$max_repeat=20' all_refs
+bibliotex:
+	latexmk -lualatex -e '$$max_repeat=20' bibliotex
 
-all_refs2:
-	lualatex all_refs.tex
+bibliotex2:
+	lualatex bibliotex.tex
 	biber all_refs
-	lualatex all_refs.tex
-	lualatex all_refs.tex
+	lualatex bibliotex.tex
+	lualatex bibliotex.tex
 
 clean:
 	latexmk -c

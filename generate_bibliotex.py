@@ -26,7 +26,7 @@ with open('list.tex', 'w') as fh :
    # get the current time
    t = datetime.now()
    # write a header to the file
-   fh.write('% generated automatically using: gen_ref_list.py\n')
+   fh.write('% generated automatically using: generate_bibliotex.py\n')
    fh.write('% last updated: ' + t.strftime('%Y-%m-%d %H:%M:%S') + '\n')
    fh.write('\n')
    # loop over the list of .bib files
@@ -53,7 +53,7 @@ with open('all.txt', 'w') as output_file :
 # in the margins next to the bibliographies.
 
 # open the output file and give it a handle
-with open('all_refs.tex', 'w') as fh :
+with open('bibliotex.tex', 'w') as fh :
    # get the current time
    t = datetime.now()
    # write a header to the file
@@ -136,7 +136,7 @@ with open('all_refs.tex', 'w') as fh :
    fh.write('\t' + r'This is a list of references found by a recursive \texttt{glob(**/*.bib)} within \texttt{' + pwd + '/}.' + '\n')
    fh.write('\t' + r'The entries are organized by individual \texttt{.bib} files within each subdirectory.' + '\n')
    fh.write('\t' + r'Citation keys for each citable entry are printed in the margin for convenience..' + '\n')
-   fh.write('\t' + r'The \LaTeX\ source code for this document was generated automatically by the \texttt{python} script \texttt{gen\_ref\_list.py}.' + '\n')
+   fh.write('\t' + r'The \LaTeX\ source code for this document was generated automatically by the \texttt{python} script \texttt{generate\_bibliotex.py}.' + '\n')
    fh.write(r'\end{abstract}' + '\n')
    fh.write('\n')
    #fh.write(r'\begin{multicols}{2}' + '\n')
