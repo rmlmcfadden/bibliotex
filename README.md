@@ -16,25 +16,26 @@ Compared to more "traditional" methods of managing `.bib` entries, there are
 several peculiarities to this collection:
 
 - Unicode literals are used wherever possible.
-- Macros from [`chemformula`] are used for typesetting <i>all</i> chemical formulas.
-- Macros from [`siunitx`] are used for typesetting <i>all</i> quantities.
+- Macros from [chemformula] are used for typesetting <i>all</i> chemical formulas.
+- Macros from [siunitx] are used for typesetting <i>all</i> quantities.
 - Some `.bib` fields (e.g., `notes`, `eprint`, etc.) are commented out with a `%`.
 - Somewhat long/verbose citation keys are used to (uniquely) identify each `.bib` entry.
 
 Some of these choices may cause problems for typical [LaTeX] workflows;
-however, most can be overcome using something like [`glob2bib`].
+however, most can be overcome using something like [glob2bib].
 
 A convenience script `generate_bibliotex.py` is also included, which generates
 `bibliotex.pdf` - a 100+ page `.pdf` containing <i>every</i> entry in this
 collection (typeset in the style of [Physical Review X] - with hyperlinks)!
 
-Note that generating `bibliotex.pdf` requires [LuaLaTeX] and [BibLaTeX]/[Biber].
+Note that generating `bibliotex.pdf` requires [LuaLaTeX] and [BibLaTeX]/[biber].
 
-[`glob2bib`]: https://github.com/rmlmcfadden/glob2bib
-[`chemformula`]: https://ctan.org/pkg/chemformula
-[`siunitx`]: https://ctan.org/pkg/siunitx
+[glob2bib]: https://github.com/rmlmcfadden/glob2bib
+[chemformula]: https://ctan.org/pkg/chemformula
+[siunitx]: https://ctan.org/pkg/siunitx
 [Physical Review X]: https://journals.aps.org/prx/
-[LaTeX]: https://www.latex-project.org/
-[LuaLaTeX]: http://www.luatex.org/
-[BibLaTeX]: https://github.com/plk/biblatex
-[Biber]: https://github.com/plk/biber
+[LaTeX]: https://ctan.org/pkg/latex
+[LuaLaTeX]: https://ctan.org/pkg/luatex
+[BibLaTeX]: https://ctan.org/pkg/biblatex
+[biber]: https://ctan.org/pkg/biber
+[BibTeX]: https://ctan.org/pkg/bibtex
