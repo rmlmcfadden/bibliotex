@@ -142,22 +142,27 @@ with open("bibliotex.tex", "w") as fh:
         "\t"
         + r"This is a list of references found by a recursive \texttt{glob(**/*.bib)} within \texttt{"
         + pwd
-        + "/}."
+        + "/references/}."
         + "\n"
     )
     fh.write(
         "\t"
-        + r"The entries are organized by individual \texttt{.bib} files within each subdirectory."
+        + r"The entries are organized into individual \texttt{.bib} files, grouped together thematically using subdirectories."
         + "\n"
     )
     fh.write(
         "\t"
-        + r"Citation keys for each citable entry are printed in the margin for convenience.."
+        + r"Citation keys for each entry are printed in the margin for convenience."
         + "\n"
     )
     fh.write(
         "\t"
-        + r"The \LaTeX\ source code for this document was generated automatically by the \texttt{python} script \texttt{generate\_bibliotex.py}."
+        + r"The entries are formatted in the style of the American Physical Society journal \emph{Physical Review X}."
+        + "\n"
+    )
+    fh.write(
+        "\t"
+        + r"The \LaTeX\ source code for this document was generated automatically by the Python script \texttt{generate\_bibliotex.py}."
         + "\n"
     )
     fh.write(r"\end{abstract}" + "\n")
