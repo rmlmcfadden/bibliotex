@@ -8,7 +8,7 @@ bibliotex:
 
 bibliotex2:
 	lualatex bibliotex.tex
-	biber all_refs
+	biber bibliotex
 	lualatex bibliotex.tex
 	lualatex bibliotex.tex
 
