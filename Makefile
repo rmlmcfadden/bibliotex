@@ -4,7 +4,7 @@
 # due to the large (and ever-growing) size of all_refs.tex
 
 bibliotex:
-	latexmk -lualatex -e '$$max_repeat=20' bibliotex
+	latexmk -lualatex -e '$$max_repeat=100' bibliotex
 
 bibliotex2:
 	lualatex bibliotex.tex
