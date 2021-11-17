@@ -25,10 +25,18 @@ Some of these choices may cause problems for typical [LaTeX] workflows;
 however, most can be overcome using something like [glob2bib].
 
 A convenience script `generate_bibliotex.py` is also included, which generates
-`bibliotex.pdf` - a 100+ page `.pdf` containing <i>every</i> entry in this
-collection (typeset in the style of [Physical Review X] - with hyperlinks)!
+`bibliotex.tex`: the source code for a 150+ page `.pdf` containing <i>every</i>
+entry in this collection
+(typeset in the style of [Physical Review X] - with hyperlinks)!
+The build procedure can be automated by running:
 
-Note that generating `bibliotex.pdf` requires [LuaLaTeX] and [BibLaTeX]/[biber].
+```bash
+python3 generate_bibliotex.py
+make
+```
+
+Note that compiling `bibliotex.tex` (which generates `bibliotex.pdf`) requires
+[LuaLaTeX] and [BibLaTeX]/[biber].
 
 [glob2bib]: https://github.com/rmlmcfadden/glob2bib
 [chemformula]: https://ctan.org/pkg/chemformula
