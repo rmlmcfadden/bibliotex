@@ -22,7 +22,9 @@ several peculiarities to this collection:
 - Somewhat long/verbose citation keys are used to (uniquely) identify each `.bib` entry.
 
 Some of these choices may cause problems for typical [LaTeX] workflows;
-however, most can be overcome using something like [glob2bib].
+however, most can be overcome using something like [glob2bib] to selectively
+parse through (and modify) the formatting of the desired entries
+(e.g., swapping unicode greek characters with equivalent math-mode commands).
 
 A convenience script `generate_bibliotex.py` is also included, which generates
 `bibliotex.tex`: the source code for a 150+ page `.pdf` containing <i>every</i>
