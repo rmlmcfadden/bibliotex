@@ -14,3 +14,7 @@ bibliotex2:
 
 clean:
 	latexmk -c
+
+count_entries:
+	grep --recursive "@" references/ | wc -l
+
