@@ -40,6 +40,19 @@
    %eprint = {https://doi.org/10.7566/JPSJ.85.091014}
 }
 
+@article{2018-Bonfa-JPSCP-21-011052,
+	author = {Pietro Bonfà and Ifeanyi John Onuorah and Roberto De Renzi},
+	title = {Introduction and a Quick Look at {MUESR}, the Magnetic Structure and mUon Embedding Site Refinement Suite},
+	journal = {JPS Conf. Proc.},
+	volume = {21},
+	pages = {011052},
+	year = {2018},
+	% note = {Proceedings of the 14th International Conference on Muon Spin Rotation, Relaxation and Resonance (μSR2017)},
+	doi = {10.7566/JPSCP.21.011052},
+	URL = {https://journals.jps.jp/doi/abs/10.7566/JPSCP.21.011052},
+	% eprint = {https://journals.jps.jp/doi/pdf/10.7566/JPSCP.21.011052}
+}
+
 @article{2018-Liborio-JCP-148-134114,
    author = {Liborio, Leandro  and Sturniolo,Simone  and Jochym,Dominik },
    title = {Computational prediction of muon stopping sites using ab initio random structure searching ({AIRSS})},
@@ -119,4 +132,76 @@
    year = "2020",
    url = "http://etheses.dur.ac.uk/13423/",
 }
+
+@article{2020-Sturniolo-JCP-153-044111,
+	author = {Sturniolo, Simone and Liborio, Leandro},
+	title = {Computational prediction of muon stopping sites: A novel take on the unperturbed electrostatic potential method},
+	journal = {J. Chem. Phys.},
+	volume = {153},
+	number = {4},
+	pages = {044111},
+	year = {2020},
+	doi = {10.1063/5.0012381},
+	URL = {https://doi.org/10.1063/5.0012381},
+	% eprint = {https://doi.org/10.1063/5.0012381},
+}
+
+@article{2021-McArdle-PRXQ-2-020349,
+	title = {Learning from Physics Experiments with Quantum Computers: Applications in Muon Spectroscopy},
+	author = {McArdle, Sam},
+	journal = {PRX Quantum},
+	volume = {2},
+	issue = {2},
+	pages = {020349},
+	numpages = {35},
+	year = {2021},
+	month = {Jun},
+	publisher = {American Physical Society},
+	doi = {10.1103/PRXQuantum.2.020349},
+	url = {https://link.aps.org/doi/10.1103/PRXQuantum.2.020349}
+}
+
+@article{2021-Bonfa-CPC-260-107719,
+	title = {{UNDI}: An open-source library to simulate muon-nuclear interactions in solids},
+	journal = {Comput. Phys. Commun.},
+	volume = {260},
+	pages = {107719},
+	year = {2021},
+	issn = {0010-4655},
+	doi = {10.1016/j.cpc.2020.107719},
+	url = {https://www.sciencedirect.com/science/article/pii/S0010465520303556},
+	author = {Pietro Bonfà and Jonathan Frassineti and Muhammad Maikudi Isah and Ifeanyi John Onuorah and Samuele Sanna},
+	keywords = {Muon spin rotation and relaxation spectroscopy, Spin Hamiltonian, Data analysis, Density Functional Theory, Magnetism, Python 3},
+	abstract = {We present UNDI, an open-source program to analyze the time dependent spin polarization of an isolated muon interacting with the surrounding nuclear magnetic dipoles in the context of standard muon spin rotation and relaxation spectroscopy experiments. The code can perform both exact and approximated estimates of the muon polarization function in presence of external fields and electric field gradients on the nuclei surrounding the muon. We show that this tool, combined to ab initio estimations of the electric field gradient at the nuclei interacting with the muon, can become a valuable complement to supercell based identifications of muon sites in crystals when large nuclear magnetic moments are present in the sample. In addition, it allows to properly investigate physical properties influenced by the presence of a non-negligible electric field gradient such as avoided level crossing resonance, nature of the ground state, disentanglement of electronic and nuclear magnetic moments or charge ordered states. The efficiency and effectiveness of this method is shown along the lines of three realistic examples.
+	Program summary
+	Program Title: UNDI CPC Library link to program files: http://dx.doi.org/10.17632/grp8njy6gz.1 Developer’s repository link: https://github.com/bonfus/undi Code Ocean capsule: https://codeocean.com/capsule/8365303 Licensing provisions: GPLv3 Programming language: Python Nature of problem: To simplify and potentially automate the analysis of the nuclear contribution to muon polarization functions in crystalline materials. Solution method: A python library that provides a set of tools to efficiently solve the spin Hamiltonian describing the interaction between the muon and its neighboring nuclei. The code provides the time development of the spin polarization of the muon subject to external fields and accounts for quadrupolar interactions at the nuclear sites. The solution is sought at quantum level accuracy and Hilbert spaces with dimension up to one million can be handled, thus providing accurate results for all standard experimental conditions.}
+}
+
+@online{arXiv:2110.07341,
+	title = "{MuFinder}: A program to determine and analyse muon stopping sites",
+	author = "B. M. Huddart and A. Hernández-Melián and T. J. Hicken and M. Gomilšek and Z. Hawkhead  and S. J. Clark and F. L. Pratt and T. Lancaster",
+	% year = "2021",
+	% month = "10",
+	% day = "14",
+	eprinttype = "arxiv",
+	eprint = "2110.07341",
+	eprintclass = "cond-mat.str-el",
+	archivePrefix = "arXiv",
+	primaryClass = "cond-mat.str-el",
+}
+
+@article{2021-Sturniolo-XRS-50-180,
+	author = {Sturniolo, Simone and Hillier, Adrian},
+	title = {{Mudirac}: A {Dirac} equation solver for elemental analysis with muonic X-rays},
+	journal = {X-Ray Spectrom.},
+	volume = {50},
+	number = {3},
+	pages = {180--196},
+	doi = {10.1002/xrs.3212},
+	url = {https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/abs/10.1002/xrs.3212},
+	% eprint = {https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/pdf/10.1002/xrs.3212},
+	abstract = {We present a new open-source software for the integration of the radial Dirac equation developed specifically with muonic atoms in mind. The software, called mudirac, is written in C++ and can be used to predict frequencies and probabilities of the transitions between levels of the muonic atom. In this way, it provides an invaluable tool in helping with the interpretation of muonic X-ray spectra for elemental analysis. We introduce the details of the algorithms used by the software, show the interpretation of a few example spectra and discuss the more complex issues involved with predicting the intensities of the spectral lines. The software is available publicly at https://github.com/muon-spectroscopy-computational-project/mudirac.},
+	year = {2021},
+}
+
 
