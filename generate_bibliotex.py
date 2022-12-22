@@ -57,7 +57,7 @@ with open("bibliotex.tex", "w") as fh:
     # get the current time
     t = datetime.now()
     # write a header to the file
-    fh.write("% generated automatically using: gen_ref_list.py\n")
+    fh.write("% generated automatically using: generate_bibliotex.py\n")
     fh.write("% last updated: " + t.strftime("%Y-%m-%d %H:%M:%S") + "\n")
     fh.write("\n")
     fh.write(r"\documentclass[letterpaper, 10pt, oneside, openany]{report}" + "\n")
