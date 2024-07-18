@@ -1,0 +1,74 @@
+
+@article{2020-Parfitt-NIMB-478-21,
+	title = {Machine learning for the prediction of stopping powers},
+	journal = {Nucl. Instrum. Methods Phys. Res., Sect. B},
+	volume = {478},
+	pages = {21--33},
+	year = {2020},
+	issn = {0168-583X},
+	doi = {10.1016/j.nimb.2020.05.015},
+	url = {https://www.sciencedirect.com/science/article/pii/S0168583X20302445},
+	author = {William A. Parfitt and Richard B. Jackman},
+	keywords = {Machine learning, Random forest, Stopping power, SRIM},
+	abstract = {The stopping power of a material upon interaction with an energetic ion is the key measure of how far that ion will travel. The implications of accurate particle range calculations are tremendous, affecting every single application in which particle radiation is involved, from nuclear power to medicine. An approach is presented which attempts to overcome current shortcomings in the theoretical understanding of stopping power, as well as the methods used to interpret and exploit measured data. This is a considerable challenge, however the use of a novel machine learning methodology is shown to hold great promise in this endeavour: the ultimate aim being the ability to correctly predict the stopping value for any energy, ion and target combination, having no pre-existing experimental data. A random forest regression algorithm is trained using over 34,000 experimental measurements, representing stopping power values for 522 ion-target combinations across the energy range 10-3 to 102 MeV/amu, and ion and target atomic masses 1 to >240. Evaluation is carried out using several fundamental error metrics, over the whole dataset as well as for individual combinations, to provide the most comprehensive understanding of performance when tested under strict cross-validation criteria. The resulting model is shown to yield predicted stopping power curves corresponding closely to those of the true experimental values, with an ability to generalise across target elements, compounds, mixtures, alloys and polymers, irrespective of phase, and for a wide range of ion masses.}
+}
+
+@article{2022-BivortHaiek-JAP-132-245103,
+	author = {Bivort Haiek, F. and Mendez, A. M. P. and Montanari, C. C. and Mitnik, D. M.},
+	title = {{ESPNN}: A novel electronic stopping power neural-network code built on the {IAEA} stopping power database. {I}. Atomic targets},
+	journal = {J. Appl. Phys.},
+	volume = {132},
+	number = {24},
+	pages = {245103},
+	year = {2022},
+	month = {12},
+	% abstract = {The International Atomic Energy Agency (IAEA) stopping power database is a highly valued public resource compiling most of the experimental measurements published over nearly a century. The database—accessible to the global scientific community—is continuously updated and has been extensively employed in theoretical and experimental research for more than 30 years. This work aims to employ machine learning algorithms on the 2021 IAEA database to predict accurate electronic stopping power cross sections for any ion and target combination in a wide range of incident energies. Unsupervised machine learning methods are applied to clean the database in an automated manner. These techniques purge the data by removing suspicious outliers and old isolated values. A large portion of the remaining data is used to train a deep neural network, while the rest is set aside, constituting the test set. The present work considers collisional systems only with atomic targets. The first version of the ESPNN (electronic stopping power neural-network code), openly available to users, is shown to yield predicted values in excellent agreement with the experimental results of the test set.},
+	issn = {0021-8979},
+	doi = {10.1063/5.0130875},
+	url = {https://doi.org/10.1063/5.0130875},
+	% eprint = {https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/5.0130875/16522305/245103\_1\_online.pdf},
+}
+
+@article{Guo_2022,
+	doi = {10.1088/1674-1056/ac4e0c},
+	url = {https://dx.doi.org/10.1088/1674-1056/ac4e0c},
+	year = {2022},
+	month = {jun},
+	publisher = {Chinese Physical Society and IOP Publishing Ltd},
+	volume = {31},
+	number = {7},
+	pages = {073402},
+	author = {Xun Guo and Hao Wang and Changkai Li and Shijun Zhao and Ke Jin and Jianming Xue},
+	title = {Development of an electronic stopping power model based on deep learning and its application in ion range prediction},
+	journal = {Chin. Phys. B},
+	abstract = {Deep learning algorithm emerges as a new method to take the raw features from large dataset and mine their deep implicit relations, which is promising for solving traditional physical challenges. A particularly intricate and difficult challenge is the energy loss mechanism of energetic ions in solid, where accurate prediction of stopping power is a long-time problem. In this work, we develop a deep-learning-based stopping power model with high overall accuracy, and overcome the long-standing deficiency of the existing classical models by improving the predictive accuracy of stopping power for ultra-heavy ion with low energy, and the corresponding projected range. This electronic stopping power model, based on deep learning algorithm, could be hopefully applied for the study of ion-solid interaction mechanism and enormous relevant applications.}
+}
+
+@article{2023-Akbari-NIMB-538-8,
+	title = {Predicting electronic stopping powers using stacking ensemble machine learning method},
+	journal = {Nucl. Instrum. Methods Phys. Res., Sect. B},
+	volume = {538},
+	pages = {8--16},
+	year = {2023},
+	issn = {0168-583X},
+	doi = {10.1016/j.nimb.2023.02.023},
+	url = {https://www.sciencedirect.com/science/article/pii/S0168583X23000599},
+	author = {Fatemeh Akbari and Somayeh Taghizadeh and Diana Shvydka and Nicholas Niven Sperling and E. Ishmael Parsai},
+	keywords = {Stopping power, Prediction, Machine learning, Stacking ensemble methods},
+	abstract = {Purpose: Accurate electronic stopping power data is crucial for calculations of radiation-induced effects in a wide range of applications, from dosimetry and radiotherapy to particle physics. The data is dependent on the parameters of both the incident charged particle and the stopping medium. The existent Bethe theory can be used to calculate the stopping power of high-energy ions, but fails at lower energies, leaving incomplete and even contradictory experimental data, often expanded through extrapolations with fitting formula, as the only accessible resource. Moreover, the majority of the experimental data is available for elements only, further limiting the validity of fitting approaches for complex material compositions. A relatively novel machine learning methodology has been proven to be effective for exactly these types of problems. In this study, Stacking Ensemble Machine Learning (EML) algorithm was developedto predict electronic stopping power for any incident ion and target combination over a wide range of ion energies. For this purpose, five ML models, namely Bagging Regressor (BR), eXtreme Gradient Boosting (XGB), Adaptive Boosting (AdB), Gradient Boosting (GB), and Random Forest (RF), were selected as base and meta learners to construct the final Stacking EML. Methods: 40,044 experimental measurements, from 1928 to the present, available on the International Atomic Energy Agency (IAEA) website were used to train machine learning (ML) algorithms. This database consists of 593 various ion-target combinations across the energy range of 0.037 to 985 MeV. For model training, the eleven most important features were selected. The model evaluation was performed using several error metrics, including R-squared (R2), root-mean-squared-error (RMSE), mean-absolute-error (MAE), and mean-absolute-percentage-error (MAPE), on both the training and test datasets. Results: 	Based on model performance evaluation tests, a stack of XGB and RF via BR meta-learner had the lowest error margin. The value of R2 = 0.9985 indicated a near-ideal fit to all samples in the training data across the entire range of stopping powers. R2 = 0.9955 for predictions made by the model on the unseen test data suggested that the model accurately predicted the test data. Conclusions: The developed model can serve as a universal tool to generate the eSP data in a wide range of cases, regardless of the availability of experimental data or reliable theoretical equations. Overall, the results of the developed tool testified to the power of machine learning approaches, and the suitability of the chosen models for solutions to practically important physics problems.}
+}
+
+@article{2024-Minagawa-NIMB-553-165383,
+	title = {Effective combinations of features in predicting the range of incident ions using machine learning},
+	journal = {Nucl. Instrum. Methods Phys. Res., Sect. B},
+	volume = {553},
+	pages = {165383},
+	year = {2024},
+	issn = {0168-583X},
+	doi = {10.1016/j.nimb.2024.165383},
+	url = {https://www.sciencedirect.com/science/article/pii/S0168583X24001538},
+	author = {Hideaki Minagawa and Tomoya Tezuka and Hidetsugu Tsuchida},
+	keywords = {Ion range, Machine learning},
+	abstract = {Machine learning techniques were used to predict the range of ions in material, even when stopping power data is unknown. Simple features such as atomic and mass numbers were used in learning process. Two different machine learning models, Decision Tree (DT) and Kernel Ridge Regression (KRR), were used to assess each feature’s importance and the effect of combining them. The results showed that the chosen features were sufficient for accurate prediction. Furthermore, it was found that the combination and features are essential for accurate results. Analysis by KRR established a relationship between the range of the implanted ions and the energy of the incident ions, showing that the range is approximately proportional to the energy in the dataset used in this work.}
+}
+
